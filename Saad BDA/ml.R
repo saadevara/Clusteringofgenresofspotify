@@ -117,16 +117,6 @@ violin_plot <- ggplot(sampled_data, aes(x = as.factor(cluster), y = danceability
 print(violin_plot)
 
 
-
-
-
-
-
-
-
-
-
-
 # Heatmap for Correlation Matrix
 cor_matrix <- cor(sampled_data[, c('danceability', 'energy', 'key')])
 
@@ -140,9 +130,6 @@ heatmap_plot <- plot_ly(z = cor_matrix,
   layout(title = "Correlation Matrix Heatmap")
 
 print(heatmap_plot)
-
-
-
 
 
 
